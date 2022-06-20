@@ -29,11 +29,11 @@ public class DemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		RestTemplate restTemplate = new RestTemplate();
 		String fooResourceUrl
-				= "http://www.majorcineplex.com/cinema";
-		ResponseEntity<String> response
-				= restTemplate.getForEntity(fooResourceUrl, String.class);
-		log.info(response.getBody());
-
+				= "http://worldtimeapi.org/api/timezone/Asia/Bangkok";
+		ResponseEntity<WorldTimeResponse> response
+				= restTemplate.getForEntity(fooResourceUrl, WorldTimeResponse.class);
+		log.info(String.valueOf(response.getBody()));
+		System.exit(0);
 //		System.out.println(response.getBody());
 	}
 }

@@ -33,7 +33,7 @@ public class DemoApplication implements CommandLineRunner {
 		ResponseEntity<WorldTimeResponse> response
 				= restTemplate.getForEntity(fooResourceUrl, WorldTimeResponse.class);
 		log.info(String.valueOf(response.getBody()));
-		System.exit(0);
+//		System.exit(0);
 //		System.out.println(response.getBody());
 	}
 }

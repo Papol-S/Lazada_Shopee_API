@@ -4,11 +4,7 @@ import lombok.Data;
 
 @Data
 public class SellerIdResponse {
-    private String seller_id;
+        private String seller_id;
+        private String message_type;
 
-    @Override
-    public String toString() {
-        return "Seller ID = " +
-                seller_id;
-    }
 }

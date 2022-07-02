@@ -43,12 +43,6 @@ public class DemoApplication implements CommandLineRunner {
 
 
 
-//		log.info("Start");
-//		log.info(String.valueOf(testClient));
-//		log.info("end");
-//		System.exit(0);
-
-
 
 	}
 
@@ -57,15 +51,11 @@ public class DemoApplication implements CommandLineRunner {
 		RestTemplate restTemplate = new RestTemplate();
 		String fooResourceUrl
 				= "http://worldtimeapi.org/api/timezone/Asia/Bangkok";
+
+		System.out.println("test");
 		ResponseEntity<WorldTimeResponse> response
 				= restTemplate.getForEntity(fooResourceUrl, WorldTimeResponse.class);
 		log.info(String.valueOf(response.getBody()));
 
-		WorldTimeResponse test = new WorldTimeResponse();
-		System.out.println("start");
-		System.out.println(test.toString());
-//		System.exit(0);
-
-//		System.out.println(response.getBody());
 	}
 }

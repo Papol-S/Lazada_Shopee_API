@@ -2,7 +2,6 @@ package com.example.demo;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
 @RestController
 @RequestMapping("lazadaApi")
 @Slf4j
@@ -16,6 +15,4 @@ public class CallbackController {
         log.info(String.valueOf(sellerIdResponse));
         return "hi";
     }
-
-
 }

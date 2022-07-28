@@ -1,4 +1,4 @@
-package com.example.demo;
+package Client.Lazada.Lazop;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
